@@ -19,7 +19,7 @@ Understanding water flow in a field requires measuring the elevation of the fiel
 As part of the data engineering team, you are tasked to produce an easy to use, reliable and well designed python module that domain experts and data scientists can use to fetch, visualise, and transform publicly available satellite and LIDAR data
 
   
-<h1><a name="preparation">Data</a></h1>
+<h2><a name="preparation">Data</a></h2>
 
 The 3D Elevation Program (3DEP) of the USGS (United States Geological Survey) provides access to the 3DEP repository's lidar point cloud data. Users can interact with massive amounts of lidar point cloud data without having to download it to their local computers.
   
