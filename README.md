@@ -36,8 +36,7 @@ pip freeze > requirements.txt
 
 
 <h1><a name="requirements">Requirements</a></h1>
-Geopandas
   
-PDAL
-  
-Laspy
+* Geopandas
+* PDAL
+* Laspy
