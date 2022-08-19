@@ -3,8 +3,10 @@ import json
 import sys
 from shapely.geometry import Point
 import geopandas as gpd
+import pandas as pd 
 
 
+### data fetching ang loading 
 def get_json_data(path):
     """
     --function to return json data
@@ -30,5 +32,17 @@ geo_df['elevation_m'] = elevations
 geo_df['Geometry'] = geometry_
 
 print(geo_df)
+
+#### data visualization 
+
+geo_df.plot(c='elevation_m', scheme="quantiles", cmap='terrain', legend=True,
+                                  markersize=10,
+                                  figsize=(15, 20)
+                                  )
+
+plt.title('Terrain Elevation Map of the selected region')
+plt.xlabel('Longitude')
+plt.ylabel('Latitude');
+
 
     
